@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Responsive Cards</title>
+
+
+<style>
+    body {
+        font-family: "Poppins", sans-serif;
+        background: #f6f1eb;
+        padding: 40px;
+        margin: 0;
+    }
+
+    /*  Default: Large screen → 3 cards per row */
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .card {
+        background: #ffffff;
+        padding: 25px;
+        border-radius: 16px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-4px);
+    }
+
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 14px;
+    }
+
+    .card-title {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .price {
+        font-size: 20px;
+        font-weight: 700;
+        color: #b68d2e;
+    }
+
+    .card-text {
+        color: #555;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /*  Small Screen – 1 card per row */
+    @media (max-width: 600px) {
+        .card-container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /* Medium Screen – 2 cards per row */
+    @media (min-width: 601px) and (max-width: 992px) {
+        .card-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+</style>
+
+</head>
+<body>
+
+<div class="card-container">
+
+    <div class="card">
+        <div class="card-header">
+            <span class="card-title">Cappuccino</span>
+            <span class="price">$49</span>
+        </div>
+        <p class="card-text">Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="card-title">Americano</span>
+            <span class="price">$49</span>
+        </div>
+        <p class="card-text">Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="card-title">Espresso</span>
+            <span class="price">$49</span>
+        </div>
+        <p class="card-text">Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="card-title">Macchiato</span>
+            <span class="price">$49</span>
+        </div>
+        <p class="card-text">Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="card-title">Mocha</span>
+            <span class="price">$49</span>
+        </div>
+        <p class="card-text">Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="card-title">Coffee Latte</span>
+            <span class="price">$49</span>
+        </div>
+        <p class="card-text">Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="card-title">Piccolo Latte</span>
+            <span class="price">$49</span>
+        </div>
+        <p class="card-text">Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="card-title">Ristretto</span>
+            <span class="price">$49</span>
+        </div>
+        <p class="card-text">Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="card-title">Affogato</span>
+            <span class="price">$49</span>
+        </div>
+        <p class="card-text">Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
